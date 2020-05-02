@@ -11,6 +11,12 @@ CurrentBone_GlobalLocation = Arm.matrix_world @ CurrentBone.head  # Global coord
 HookBone_GlobalLocation = Arm.matrix_world @ HookBone.head  # Global coordinates of HookBone
 RelativeCoordinate = CurrentBone_GlobalLocation - HookBone_GlobalLocation  # Relative coordinates
 
+print('')
+print('***** Result *****')
 print(CurrentBone_GlobalLocation)
 print(HookBone_GlobalLocation)
 print(RelativeCoordinate)
+print('***** coordinates separate *****')
+print(RelativeCoordinate[0])
+print(RelativeCoordinate[1])
+print(RelativeCoordinate[2])
